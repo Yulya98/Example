@@ -1,0 +1,11 @@
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\bin\Debug\netcoreapp2.0\ExampleAuthorizationServer.deps.json
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\bin\Debug\netcoreapp2.0\ExampleAuthorizationServer.runtimeconfig.json
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\bin\Debug\netcoreapp2.0\ExampleAuthorizationServer.runtimeconfig.dev.json
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\bin\Debug\netcoreapp2.0\ExampleAuthorizationServer.dll
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\obj\Debug\netcoreapp2.0\ExampleAuthorizationServer.csprojAssemblyReference.cache
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\obj\Debug\netcoreapp2.0\ExampleAuthorizationServer.csproj.CoreCompileInputs.cache
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\obj\Debug\netcoreapp2.0\ExampleAuthorizationServer.AssemblyInfoInputs.cache
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\obj\Debug\netcoreapp2.0\ExampleAuthorizationServer.AssemblyInfo.cs
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\bin\Debug\netcoreapp2.0\ExampleAuthorizationServer.pdb
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\obj\Debug\netcoreapp2.0\ExampleAuthorizationServer.dll
+C:\Users\Yuliya.Kukareka\source\repos\ExampleAuthorizationServer\ExampleAuthorizationServer\obj\Debug\netcoreapp2.0\ExampleAuthorizationServer.pdb
