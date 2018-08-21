@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using System.IdentityModel.Tokens;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.Owin.Security.OpenIdConnect;
 using System.Text;
@@ -55,7 +55,7 @@ namespace ExampleAuthorizationServer
                     ValidateAudience = true,
                     ValidAudience = "http://oec.com",
                     ValidIssuer = "http://oec.com",
-                    IssuerSigningKey = new SymmetrivSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"))
                 };
             });
         }
@@ -68,6 +68,8 @@ namespace ExampleAuthorizationServer
                 app.UseDeveloperExceptionPage();
             }
             SeedDatabase.Initialize(app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope().ServiceProvider);
+
+            app.UseAuthentication();
 
             app.UseMvc();
         }

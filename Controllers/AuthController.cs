@@ -28,7 +28,7 @@ namespace ExampleAuthorizationServer.Controllers
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             var user = await userManager.FindByNameAsync(model.Username);
-            if(user != null && await userManager.CheckPasswordAsync(user, model.Password))
+            if (user != null && await userManager.CheckPasswordAsync(user, model.Password))
             {
                 var claims = new[]
                 {
@@ -36,15 +36,21 @@ namespace ExampleAuthorizationServer.Controllers
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
                 };
 
-                var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecurytyKey"));
+                var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"));
 
                 var token = new JwtSecurityToken(
-                    issuer: "http://oec.com",
-                    audience: "http://oec.com",
+                    issuer: "http://localhost:52200",
+                    audience: "http://localhost:52200",
                     expires: DateTime.UtcNow.AddHours(1),
                     claims: claims,
                     signingCredentials: new Microsoft.IdentityModel.Tokens.SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256)
                     );
+
+                return Ok(new
+                {
+                    token = new JwtSecurityTokenHandler().WriteToken(token),
+                    expiration = token.ValidTo
+                });
             }
             return Unauthorized();
         }
